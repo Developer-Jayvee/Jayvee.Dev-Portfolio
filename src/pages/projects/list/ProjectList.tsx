@@ -16,7 +16,7 @@ export default function ProjectList(){
     },[type])
     return (
         <div className="p-4">
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(380px,1fr))] gap-4">
+            <div className="grid max-sm:grid-cols-1 max-md:grid-cols-2 grid-cols-[repeat(auto-fill,minmax(380px,1fr))] gap-4">
                 {
                     projects && projects.map( (item,index) => (
                         <ProjectCard

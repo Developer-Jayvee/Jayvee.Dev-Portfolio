@@ -16,7 +16,7 @@ export const ProjectArray : ProjectListProps[] = [
         title:"Kate Kors",
         description : "Landing Page for Kate Kors - Luxury Bags",
         status : "Completed",
-        stacks : ['React','TailwindCSS'],
+        stacks : ['React','Tailwind'],
         links : [
             { 
                 label:'Live Demo',

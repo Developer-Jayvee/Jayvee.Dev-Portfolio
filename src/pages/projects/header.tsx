@@ -3,7 +3,7 @@ import { BiFolder } from "react-icons/bi";
 
 
 export default function ProjectHeader() {
-    return <div className="grid grid-cols-[700px_1fr] gap-x-20">
+    return <div className="grid md:grid-cols-2 lg:grid-cols-[1fr_1fr] gap-x-20">
         <div >
             <p className="text-primary">MY WORK</p>
             <h1 className="text-4xl font-bold">
