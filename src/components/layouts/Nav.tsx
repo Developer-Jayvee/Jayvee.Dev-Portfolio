@@ -1,5 +1,5 @@
 import { NavLinks } from "@/constants";
-import {  useEffect, useState } from "react";
+import {   useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import {  NavLink } from "react-router-dom";
 
@@ -12,21 +12,6 @@ export default function Nav(){
             (prev) => prev === 'h-14.5' ? 'h-70 ' : 'h-14.5'
         );
     }
-    useEffect( () => {
-        const handleResize = () => {
-            const width = window.innerWidth;
-            if(width > 768 ) {
-                setNavHeight('h-14.5');
-            }
-            else setNavHeight('h-70')
-        }
-        window.addEventListener('resize',handleResize);
-
-        return () => {
-            window.removeEventListener('resize',handleResize);
-        }
-    },[]);
-
 
     return <nav className={`
         ${navHeight == 'h-14.5' ?  navHeight + ' overflow-hidden' : navHeight }
