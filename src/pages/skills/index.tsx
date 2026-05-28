@@ -1,7 +1,6 @@
 import "./css/index.css"
 import { BackendLang, FrontendLang, otherSkills, ProgLangues, TechTools } from "@/constants"
 import SkillCard from "./components/SkillCard"
-import type { ProglanguageProps } from "@/types"
 import IconUtil from "@/utilities/icon.util"
 import OtherSkillCard from "./components/OtherSkillCard"
 
@@ -16,7 +15,7 @@ export default function SkillIndex() {
             </div>
 
             <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <SkillCard<ProglanguageProps>
+                <SkillCard
                     labels={{
                         title: "Frontend Development",
                         description: "Building responsive and interactive user interfaces with modern frameworks"
@@ -24,7 +23,7 @@ export default function SkillIndex() {
                     list={FrontendLang}
                     icon="browser"
                 />
-                <SkillCard<ProglanguageProps>
+                <SkillCard
                     labels={{
                         title: "Backend Development",
                         description: "Developing robust APIs and server-side applications with modern technologies"
@@ -32,7 +31,7 @@ export default function SkillIndex() {
                     list={BackendLang}
                     icon="server"
                 />
-                <SkillCard<ProglanguageProps>
+                <SkillCard
                     labels={{
                         title: "Tools & DevOps",
                         description: "Using modern tools and DevOps practices to streamline development and deployment"
@@ -41,7 +40,7 @@ export default function SkillIndex() {
                     icon="settings"
                 />
                 <div className="h-full">
-                    <SkillCard<ProglanguageProps>
+                    <SkillCard
                         labels={{
                             title: "Langueges",
                             description: "Programming languages I use to bring ideas to life"

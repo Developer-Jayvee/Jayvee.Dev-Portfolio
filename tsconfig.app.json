@@ -6,10 +6,10 @@
     "module": "esnext",
     "types": ["vite/client"],
     "skipLibCheck": true,
-    "baseUrl": ".",
+    // "baseUrl": ".",
     "paths": {
-      "@/*" : ["src/*"],
-      "@pages/*" : ["src/pages/*"]
+      "@/*" : ["./src/*"],
+      "@pages/*" : ["./src/pages/*"]
     },
 
     /* Bundler mode */

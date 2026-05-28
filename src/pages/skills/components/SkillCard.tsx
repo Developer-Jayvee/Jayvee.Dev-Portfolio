@@ -1,17 +1,18 @@
+import type { ProglanguageProps } from "@/types";
 import SkillRate from "./SkillRate";
 import type { iconMap } from "@/utilities/icon.util";
 import IconUtil from "@/utilities/icon.util";
 
 
-interface SkillCardProps<T> {
-    list: T[];
+interface SkillCardProps {
+    list: ProglanguageProps[];
     labels : {
         title:string;
         description : string;
     },
     icon : keyof typeof iconMap;
 }
-export default function SkillCard<T>({ list , labels , icon } : SkillCardProps<T>) {
+export default function SkillCard({ list , labels , icon } : SkillCardProps) {
 
     return (
         <div className="skill-card h-full flex flex-col gap-7   bg-[linear-gradient(40deg,rgb(5,8,22)_70%,#0F172A_100%,#8B5CF6_100%)]  p-4 rounded-lg">
@@ -29,7 +30,7 @@ export default function SkillCard<T>({ list , labels , icon } : SkillCardProps<T
             <div className="flex flex-col gap-3">
                 {
                     list && list.map((data, index) => (
-                        <SkillRate key={index} skill={data?.icon} label={data?.label} rate={data?.rate} />
+                        <SkillRate key={index} data={data} />
                     ))
                 }
 
