@@ -9,7 +9,32 @@
   --accent-color:#22D3EE;
   --border-color:rgba(99, 102, 241, 0.35);
 }
-
+@theme {
+  --color-borderColor:rgba(99, 102, 241, 0.35);
+  --color-primary: #3B82F6;
+  --font-kodeMono:"Kode Mono", monospace;
+}
 *{
   font-family: "Instrument Sans", sans-serif;
+}
+body{
+  background-color: var(--background-color);
+}
+nav{
+  color:var(--default-text-color);
+}
+nav a.active{
+  position: relative;
+  width:0;
+  transition: width 400ms ease-in-out;
+}
+nav a.active::before{
+  content: "";
+  background-color: var(--primary-color);
+  height:2px;
+  width:100%;
+  position: absolute;
+  bottom:-20px;
+  
+  
 }
