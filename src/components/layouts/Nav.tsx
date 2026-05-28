@@ -14,7 +14,7 @@ export default function Nav(){
     }
 
     return <nav className={`
-        ${navHeight == 'h-14.5' ?  navHeight + ' overflow-hidden' : navHeight }
+        ${navHeight == 'h-14.5' ?  navHeight + ' ' : navHeight } overflow-hidden
         fixed  border-0 border-b border-b-borderColor shadow-md shadow-borderColor top-0 left-0 right-0 p-3  backdrop-blur-2xl z-99
     `}>
         <div className="max-md:grid grid-cols-1 max-md:gap-y-10  md:flex justify-between items-center  px-2 ">
