@@ -29,6 +29,10 @@ body{
 }
 nav{
   color:var(--default-text-color);
+  transition: height 400ms ease-in-out;
+}
+nav li {
+  position: relative;
 }
 nav a.active{
   position: relative;
@@ -47,10 +51,12 @@ nav a:hover::before{
 nav a:hover{
     filter: drop-shadow(0 -5px 10px var(--primary-color));
 }
-button{
+button,
+a
+{
   cursor: pointer;
 }
-button.cta-btn{
+a.cta-btn{
   box-shadow: 0 0 2px var(--primary-color);
   transition: box-shadow 400ms ease-in-out;
 }
@@ -58,6 +64,6 @@ button.cta-btn{
   filter: drop-shadow(0 0 10px var(--primary-color));
   transform: scale(110%);
 }
-button.cta-btn:hover{
+a.cta-btn:hover{
   box-shadow: 0 0 18px var(--primary-color);
 }

@@ -13,10 +13,11 @@ export const NavLinks : NavLinkProps[] = [
     {
         path:'projects',
         label : 'Projects'
-    },{
-        path:'about',
-        label : 'About'
     },
+    // {
+    //     path:'about',
+    //     label : 'About'
+    // },
 ]
 
 
