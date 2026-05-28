@@ -1,0 +1,9 @@
+.skill-title{
+    word-spacing: 10px;
+}
+.skill-card{
+    box-shadow: 0 0 2px var(--color-primary);
+}
+.percentage-bar{
+    box-shadow: 0 0 6px var(--color-primary);
+}

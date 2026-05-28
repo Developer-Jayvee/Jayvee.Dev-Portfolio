@@ -3,7 +3,7 @@
 
 :root{
   --primary-color :#3B82F6;
-  --background-color:#050816;
+  --background-color:rgb(5, 8, 22);
   --secondary-color:#8B5CF6;
   --default-text-color:#F8FAFC;
   --accent-color:#22D3EE;
@@ -13,6 +13,9 @@
   --color-borderColor:rgba(99, 102, 241, 0.35);
   --color-primary: #3B82F6;
   --color-secondary:#8B5CF6;
+  --color-bgColor:#050816;
+  --color-accent:#22D3EE;
+  --color-secondaryPrimary:rgb(10, 16, 44);
   --font-kodeMono:"Kode Mono", monospace;
 }
 *{
