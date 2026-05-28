@@ -1,0 +1,14 @@
+
+.project-links li a {
+    padding:10px 25px;
+}
+.project-links  li > a {
+    box-shadow: 0 0 0 var(--primary-color);
+    transition: box-shadow 400ms ease-in-out;
+}
+
+.project-links li > a:hover,
+.project-links li > a.active{
+    box-shadow: 0 0 4px var(--primary-color);
+  transform: scale(110%);
+}

@@ -161,6 +161,4 @@ export const otherSkills : ProglanguageProps[] = [
         label:"Testing",
         icon:"box"
     },
-    
-
 ]
