@@ -26,8 +26,8 @@ export default function ProjectCard({
             <div className="text-white p-2">
                 <div className="grid grid-cols-1 overflow-hidden">
                     <div className="grid grid-rows-4  ">
-                        <div className="flex items-center justify-between">
-                            <h3 className="text-lg font-bold text-elipsis overflow-hidden text-nowrap ">{info.title}</h3>
+                        <div className="grid grid-cols-[1fr_100px] gap-x-5 items-center justify-between">
+                            <h3 className="text-lg font-bold text-ellipsis  overflow-hidden text-nowrap ">{info.title}</h3>
                             <div className=" text-sm">
                                 <div className="grid grid-cols-[9px_1fr] items-center gap-2 text-secondary">
                                     <div className="rounded-full bg-secondary w-2 h-2"></div>
