@@ -1,5 +1,6 @@
 .skill-title{
     word-spacing: 10px;
+    font-size: clamp(1vw,36px,7vw);
 }
 .skill-card{
     box-shadow: 0 0 2px var(--color-primary);

@@ -12,10 +12,10 @@ export default function SkillIndex() {
             <div className="text-center  ">
                 <p className="text-primary! text-md font-medium mb-1">MY EXPERTISE</p>
                 <h1 className="skill-title text-4xl font-bold mb-2">Skills <span className="text-primary">&</span> Technologies</h1>
-                <p className="font-light text-sm w-100 text-gray-400">Technologies I work with to build modern, scalable and high-performance applications.</p>
+                <h5 className="font-light  w-100 text-gray-400">Technologies I work with to build modern, scalable and high-performance applications.</h5>
             </div>
 
-            <div className="mt-10 grid grid-cols-3 gap-6">
+            <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <SkillCard<ProglanguageProps>
                     labels={{
                         title: "Frontend Development",
@@ -50,7 +50,7 @@ export default function SkillIndex() {
                         icon="code"
                     />
                 </div>
-                <div className="col-span-2 h-full">
+                <div className="lg:col-span-2 h-full">
                     <div className="skill-card h-full flex flex-col gap-7 shadow-secondary bg-[linear-gradient(40deg,rgb(5,8,22)_70%,#0F172A_100%,#8B5CF6_100%)] border-secondary p-4 rounded-lg">
                         <div className="flex  items-center gap-4">
                             <div>

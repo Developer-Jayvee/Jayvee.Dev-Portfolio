@@ -11,8 +11,8 @@ export default function HomeIndex(){
                 </div>
                 <p className="text-lg font-extralight mt-2">A Full Stack Developer</p>
             </div>
-            <div className="flex items-center gap-7">
-                <NavLink to="/projects/all" replace className="cta-btn text-lg ring-1 ring-bg-secondary text-primary shadow-2xl px-10 font-bold py-1 shadow-primary  ">
+            <div className="flex max-sm:flex-col lg:items-center gap-7">
+                <NavLink to="/projects/all" replace className="cta-btn  ring-1 ring-bg-secondary text-primary shadow-2xl px-10 font-bold py-1 shadow-primary  ">
                     View Projects
                 </NavLink>
                 <div className="flex items-center gap-5">

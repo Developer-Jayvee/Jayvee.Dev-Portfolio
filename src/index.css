@@ -18,6 +18,7 @@
   --color-cardBg:#0B1120;
   --color-secondaryPrimary:rgb(10, 16, 44);
   --font-kodeMono:"Kode Mono", monospace;
+  
 }
 *{
   font-family: "Instrument Sans", sans-serif;
@@ -59,6 +60,8 @@ a
 a.cta-btn{
   box-shadow: 0 0 2px var(--primary-color);
   transition: box-shadow 400ms ease-in-out;
+  font-size: clamp(1vw,18px,5vw);
+  
 }
 .icon-btn:hover{
   filter: drop-shadow(0 0 10px var(--primary-color));
@@ -66,4 +69,8 @@ a.cta-btn{
 }
 a.cta-btn:hover{
   box-shadow: 0 0 18px var(--primary-color);
+}
+h5 {
+  font-size: clamp(1vw,14px,3vw) !important;
+  padding:0 5px;
 }
