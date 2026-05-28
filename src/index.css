@@ -1,2 +1,15 @@
 @import 'tailwindcss';
 
+
+:root{
+  --primary-color :#3B82F6;
+  --background-color:#050816;
+  --secondary-color:#8B5CF6;
+  --default-text-color:#F8FAFC;
+  --accent-color:#22D3EE;
+  --border-color:rgba(99, 102, 241, 0.35);
+}
+
+*{
+  font-family: "Instrument Sans", sans-serif;
+}
