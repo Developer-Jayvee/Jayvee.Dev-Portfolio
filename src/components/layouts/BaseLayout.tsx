@@ -8,8 +8,10 @@ export default function BaseLayout(){
         <header>
             <Nav/>
         </header>
-        <main>
-            <Outlet/>
+        <main className="h-screen w-full">
+            <div className="pt-15 border px-5 pb-2 border-yellow-500 h-full">
+                <Outlet/>
+            </div>
         </main>
     </>)
 }

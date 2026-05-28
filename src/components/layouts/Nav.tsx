@@ -4,7 +4,7 @@ import {  NavLink } from "react-router-dom";
 
 export default function Nav(){
 
-    return <nav className="fixed top-0 left-0 right-0 p-3 shadow-borderColor shadow-2xs">
+    return <nav className="fixed top-0 left-0 right-0 p-3 h-14  shadow-borderColor shadow-2xs">
         <div className="flex justify-between items-center px-2 ">
             <div className="flex items-center gap-2">
                 <span className="text-primary text-2xl">{'</>'}</span>

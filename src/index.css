@@ -12,6 +12,7 @@
 @theme {
   --color-borderColor:rgba(99, 102, 241, 0.35);
   --color-primary: #3B82F6;
+  --color-secondary:#8B5CF6;
   --font-kodeMono:"Kode Mono", monospace;
 }
 *{
@@ -19,6 +20,8 @@
 }
 body{
   background-color: var(--background-color);
+  height: 100vh;
+  width:100%;
 }
 nav{
   color:var(--default-text-color);
@@ -28,13 +31,29 @@ nav a.active{
   width:0;
   transition: width 400ms ease-in-out;
 }
-nav a.active::before{
+nav a.active::before,
+nav a:hover::before{
   content: "";
   background-color: var(--primary-color);
   height:2px;
   width:100%;
   position: absolute;
   bottom:-20px;
-  
-  
+}
+nav a:hover{
+    filter: drop-shadow(0 -5px 10px var(--primary-color));
+}
+button{
+  cursor: pointer;
+}
+button.cta-btn{
+  box-shadow: 0 0 2px var(--primary-color);
+  transition: box-shadow 400ms ease-in-out;
+}
+.icon-btn:hover{
+  filter: drop-shadow(0 0 10px var(--primary-color));
+  transform: scale(110%);
+}
+button.cta-btn:hover{
+  box-shadow: 0 0 18px var(--primary-color);
 }

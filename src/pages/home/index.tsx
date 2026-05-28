@@ -1,4 +1,28 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function HomeIndex(){
-    return <></>
+    return <div className="min-h-0 h-full flex items-center text-white">
+        <div className="flex flex-col gap-3 p-10">
+            <div>
+                <div className="text-[45px] font-bold leading-12">
+                    <p>Hi,</p>
+                    <p className="text-primary">I'm Jayvee Hidlao</p>
+                </div>
+                <p className="text-lg font-extralight mt-2">A Full Stack Developer</p>
+            </div>
+            <div className="flex items-center gap-7">
+                <button className="cta-btn text-lg ring-1 ring-bg-secondary text-primary shadow-2xl px-10 font-bold py-1 shadow-primary  ">
+                    Hire Me
+                </button>
+                <div className="flex items-center gap-5">
+                    <button  className="icon-btn text-primary text-3xl">
+                        <FaGithub/>
+                    </button>
+                    <button  className="icon-btn text-primary text-3xl">
+                        <FaLinkedin/>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 }
