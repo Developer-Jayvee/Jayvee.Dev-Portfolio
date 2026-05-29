@@ -16,7 +16,7 @@ export default function ProjectCard({
     image, info, stacks, links = []
 }: ProjectProps) {
 
-    return <div className="  border border-borderColor bg-cardBg rounded-lg overflow-hidden p-2">
+    return <div className=" border border-borderColor bg-cardBg rounded-lg overflow-hidden p-2">
         <div className="w-full h-full grid grid-cols-1 grid-rows-[190px_1fr]">
             <div className="w-full overflow-hidden rounded-md">
                 <div className="w-full h-full">
@@ -29,8 +29,8 @@ export default function ProjectCard({
                         <div className="grid grid-cols-[1fr_100px] gap-x-5 items-center justify-between">
                             <h3 className="text-lg font-bold text-ellipsis  overflow-hidden text-nowrap ">{info.title}</h3>
                             <div className=" text-sm">
-                                <div className="grid grid-cols-[9px_1fr] items-center gap-2 text-secondary">
-                                    <div className="rounded-full bg-secondary w-2 h-2"></div>
+                                <div className={`grid grid-cols-[9px_1fr] items-center gap-2 ${info.status === 'On-going' ? 'text-yellow-500' : 'text-primary'}`}>
+                                    <div className={`rounded-full bg-secondary w-2 h-2 ${info.status === 'On-going' ? 'bg-yellow-500 animate-ping' : 'bg-primary'}`}></div>
                                     <p>{info.status}</p>
                                 </div>
                             </div>

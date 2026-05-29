@@ -6,6 +6,7 @@ import { DiGithub } from "react-icons/di";
 import { FaCode, FaDocker, FaGit, FaHtml5, FaLaravel, FaNodeJs, FaPhp, FaReact, FaStar } from "react-icons/fa";
 import { FaComputer, FaCss, FaVuejs } from "react-icons/fa6";
 import { GrDocumentPerformance } from "react-icons/gr";
+import { MdOutlineSecurity } from "react-icons/md";
 import { RiBox1Line, RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiMysql, SiPostgresql, SiVercel } from "react-icons/si";
 import { TbSchema } from "react-icons/tb";
@@ -43,6 +44,7 @@ export const iconMap = {
     lightbulb:BsLightbulb,
     box:RiBox1Line,
     performance:GrDocumentPerformance,
+    secure:MdOutlineSecurity,
 
 }
 

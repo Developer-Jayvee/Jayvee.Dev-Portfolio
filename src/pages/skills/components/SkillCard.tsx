@@ -15,7 +15,7 @@ interface SkillCardProps {
 export default function SkillCard({ list , labels , icon } : SkillCardProps) {
 
     return (
-        <div className="skill-card h-full flex flex-col gap-7   bg-[linear-gradient(40deg,rgb(5,8,22)_70%,#0F172A_100%,#8B5CF6_100%)]  p-4 rounded-lg">
+        <div className="skill-card  h-full flex flex-col gap-7   bg-[linear-gradient(40deg,rgb(5,8,22)_70%,#0F172A_100%,#8B5CF6_100%)]  p-4 rounded-lg">
             <div className="flex  items-center gap-4">
                 <div>
                     <div className="bg-secondary rounded-full w-10 h-10 flex justify-center items-center text-2xl">

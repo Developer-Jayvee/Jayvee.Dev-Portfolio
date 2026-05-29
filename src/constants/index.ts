@@ -162,4 +162,9 @@ export const otherSkills : ProglanguageProps[] = [
         label:"Testing",
         icon:"box"
     },
+    {
+        rate:0,
+        label:"Security",
+        icon:"secure"
+    },
 ]

@@ -4,6 +4,7 @@
 }
 .project-links  li > a {
     box-shadow: 0 0 0 var(--primary-color);
+    border-radius: 15px;
     transition: box-shadow 400ms ease-in-out;
 }
 

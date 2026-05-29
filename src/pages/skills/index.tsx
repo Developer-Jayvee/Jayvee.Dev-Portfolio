@@ -50,7 +50,7 @@ export default function SkillIndex() {
                     />
                 </div>
                 <div className="lg:col-span-2 h-full">
-                    <div className="skill-card h-full flex flex-col gap-7 shadow-secondary bg-[linear-gradient(40deg,rgb(5,8,22)_70%,#0F172A_100%,#8B5CF6_100%)] border-secondary p-4 rounded-lg">
+                    <div className=" skill-card h-full flex flex-col gap-7 shadow-secondary bg-[linear-gradient(40deg,rgb(5,8,22)_70%,#0F172A_100%,#8B5CF6_100%)] border-secondary p-4 rounded-lg">
                         <div className="flex  items-center gap-4">
                             <div>
                                 <div className="bg-secondary rounded-full w-10 h-10 flex justify-center items-center text-2xl">
@@ -58,13 +58,14 @@ export default function SkillIndex() {
                                 </div>
                             </div>
                             <div>
-                                <h3 className="text-lg font-semibold">Other Skils</h3>
+                                <h3 className="text-lg font-semibold">Other Skills</h3>
                             </div>
                         </div>
                         <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4">
                            {
-                                otherSkills.map( (data) => (
+                                otherSkills.map( (data,index) => (
                                     <OtherSkillCard
+                                        key={index}
                                         icon={data.icon}
                                         label={data.label}
                                     />
