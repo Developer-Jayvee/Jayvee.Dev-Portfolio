@@ -1,15 +1,15 @@
-name: CI/CD Deploy
+name: CI/CD Pipeline
 
 on:
   push:
     branches: [main]
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -23,8 +23,16 @@ jobs:
       - name: Build project
         run: npm run build
 
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Install Vercel CLI
         run: npm install -g vercel
 
       - name: Deploy to Vercel
-        run: vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }} --name jayvee-dev
+        run: vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }} --name jayvee-dev 
