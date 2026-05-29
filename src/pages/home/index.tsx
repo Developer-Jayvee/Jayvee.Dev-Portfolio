@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {  NavLink } from "react-router-dom";
 
 export default function HomeIndex(){
-    return <div className="min-h-0 h-full flex items-center max-md:justify-center text-white">
+    return <div className=" fixed  top-0 left-0 bottom-0 right-0 min-h-0 h-full flex items-center max-md:justify-center text-white">
         <div className="flex flex-col gap-3 p-10">
             <div>
                 <div className="text-[45px] font-bold leading-12">

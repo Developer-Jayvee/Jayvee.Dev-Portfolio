@@ -25,7 +25,7 @@ export default function ProjectCard({
             </div>
             <div className="text-white p-2">
                 <div className="grid grid-cols-1 overflow-hidden">
-                    <div className="grid grid-rows-4  ">
+                    <div className="grid grid-rows-4 gap-y-2  ">
                         <div className="grid grid-cols-[1fr_100px] gap-x-5 items-center justify-between">
                             <h3 className="text-lg font-bold text-ellipsis  overflow-hidden text-nowrap ">{info.title}</h3>
                             <div className=" text-sm">
@@ -35,8 +35,8 @@ export default function ProjectCard({
                                 </div>
                             </div>
                         </div>
-                        <p className="text-sm text-ellipsis overflow-hidden text-nowrap">{info.description}</p>
-                        <div className="flex gap-3 mb-2">
+                        <p className="text-sm text-ellipsis overflow-hidden">{info.description}</p>
+                        <div className="flex gap-3 ">
                             {
                                 stacks && stacks.map((items) => (
                                     <TechCards label={items} />

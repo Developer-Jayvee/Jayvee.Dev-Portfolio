@@ -27,6 +27,7 @@ body{
   background-color: var(--background-color);
   height: 100vh;
   width:100%;
+   
 }
 nav{
   color:var(--default-text-color);
@@ -73,4 +74,19 @@ a.cta-btn:hover{
 h5 {
   font-size: clamp(1vw,14px,3vw) !important;
   padding:0 5px;
+}
+.home-page{
+   background:
+    linear-gradient(
+      to top right,
+      rgba(5, 8, 22, 1) 0%,
+      rgba(11, 17, 32, .95) 50%,
+      rgba(17, 24, 39, 0.6) 70%,
+      rgba(17, 24, 39, .9) 100%
+    ),
+    url('../src/assets/home-bg.jpg');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
